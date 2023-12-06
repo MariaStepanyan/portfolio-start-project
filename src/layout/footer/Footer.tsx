@@ -13,7 +13,7 @@ export const Footer = () => {
               <Icon
                 height="21px"
                 width="21px"
-                viewBox="0 0 21px 21px"
+                viewBox="0 0 21 21"
                 iconId="instagram"
               ></Icon>
             </SocialLink>
@@ -23,7 +23,7 @@ export const Footer = () => {
               <Icon
                 height="21px"
                 width="21px"
-                viewBox="0 0 21px 21px"
+                viewBox="0 0 21 21"
                 iconId="telegram"
               ></Icon>
             </SocialLink>
@@ -33,7 +33,7 @@ export const Footer = () => {
               <Icon
                 height="21px"
                 width="21px"
-                viewBox="0 0 21px 21px"
+                viewBox="0 0 21 21"
                 iconId="vk"
               ></Icon>
             </SocialLink>
@@ -43,7 +43,7 @@ export const Footer = () => {
               <Icon
                 height="21px"
                 width="21px"
-                viewBox="0 0 21px 21px"
+                viewBox="0 0 21 21"
                 iconId="linkedin"
               ></Icon>
             </SocialLink>
