@@ -3,8 +3,10 @@ import { SectionTitle } from '../../../components/SectionTitle'
 import { Menu } from '../../../components/menu/Menu'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { Work } from './work/Work'
-import socialImg from '../../../assets/images/proj1.png'
-import timerImg from '../../../assets/images/proj2.png'
+import socialImgPng from '../../../assets/images/proj1.png'
+import timerImgPng from '../../../assets/images/proj2.png'
+import socialImgWebp from '../../../assets/images/proj1.webp'
+import timerImgWebp from '../../../assets/images/proj2.webp'
 
 
 const worksItems = ['All', 'landing page', 'React', 'spa']
@@ -15,8 +17,8 @@ export const Works = () => {
       <SectionTitle>My Works</SectionTitle>
       <Menu menuItem={worksItems} />
       <FlexWrapper justify='space-around'>
-      <Work src={socialImg} title='Social Network' text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'/>
-      <Work src={timerImg} title='Timer' text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim'/>
+      <Work src={socialImgWebp || socialImgPng} title='Social Network' text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'/>
+      <Work src={timerImgWebp || timerImgPng} title='Timer' text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim'/>
       </FlexWrapper>
     </StyledWorks>
   )

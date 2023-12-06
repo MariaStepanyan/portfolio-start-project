@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import photo from '../../../assets/images/photo.jpg'
+import photoJpg from '../../../assets/images/photo.jpg'
+import photoWebp from '../../../assets/images/photo.webp'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 
 export const Main = () => {
@@ -11,7 +12,7 @@ export const Main = () => {
           <Name>I am Maria Stepanyan</Name>
           <MainTitle>A Web Developer. </MainTitle>
         </div>
-        <Photo src={photo} alt="" />
+        <Photo src={photoWebp || photoJpg} alt="" />
       </FlexWrapper>
     </StyledMain>
   )
