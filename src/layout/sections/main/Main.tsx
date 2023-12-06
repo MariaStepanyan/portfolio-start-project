@@ -12,7 +12,7 @@ export const Main = () => {
           <Name>I am Maria Stepanyan</Name>
           <MainTitle>A Web Developer. </MainTitle>
         </div>
-        <Photo src={photoWebp || photoJpg} alt="" />
+        <Photo src={photoJpg} alt="" />
       </FlexWrapper>
     </StyledMain>
   )
