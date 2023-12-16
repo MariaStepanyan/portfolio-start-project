@@ -1,10 +1,9 @@
-import styled from 'styled-components'
-import { Icon } from '../icon/Icon'
+import Img from '../../assets/images/favicon.svg'
 
 export const Logo = () => {
   return (
     <a href="">
-      <Icon iconId='code'/>
+      <img src={Img} width="50" height="50" />
     </a>
   )
 }
