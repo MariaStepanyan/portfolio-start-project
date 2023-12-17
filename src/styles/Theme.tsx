@@ -1,8 +1,12 @@
 export const theme = {
   colors: {
-    primeryBg: '#fff8b8',
-    secondaryBg: '#fff59f',
-    accent: '#9b0d2c',
+    primeryBg: '#fdf9d0',
+    secondaryBg: '#fffef6',
+    accent: '#f2ef97',
     font: '#470a18',
   }
 }
+
+// '#fff8b8',
+// '#fff59f',
+// '#9b0d2c',
