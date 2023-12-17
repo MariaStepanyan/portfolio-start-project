@@ -1,13 +1,15 @@
 import styled from 'styled-components'
-import { Icon } from '../../../components/icon/Icon'
 import { SectionTitle } from '../../../components/SectionTitle'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { Skill } from './skill/Skill'
+import { Contact } from '../contacts/Contacts'
+import { Container } from '../../../components/Container'
 
 export const Skills = () => {
   return (
     <StyledSkills>
       <SectionTitle>My Skills</SectionTitle>
+      <Container>
       <FlexWrapper wrap='wrap' justify={'space-between'}>
         <Skill
           iconId="code"
@@ -40,11 +42,11 @@ export const Skills = () => {
           text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"
         />
       </FlexWrapper>
+      </Container>
     </StyledSkills>
   )
 }
 
 const StyledSkills = styled.section`
-  background-color: #8fdfcf;
-  min-height: 100vh;
+  
 `

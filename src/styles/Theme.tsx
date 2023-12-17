@@ -9,4 +9,4 @@ export const theme = {
 
 // '#fff8b8',
 // '#fff59f',
-// '#9b0d2c',
+// '#690017',
