@@ -8,8 +8,11 @@ export const theme = {
     borderColor: '#a1a586',
     placeholderColor: '#495057',
   },
+
+  media: {
+    tablet:'screen and (max-width: 768px)',
+    mobile:'screen and (max-width: 576px)'
+  }
 }
 
-// '#fff8b8',
-// '#fff59f',
-// '#690017',
+
