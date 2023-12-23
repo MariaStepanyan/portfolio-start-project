@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { SectionTitle } from '../../../components/SectionTitle'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { Skill } from './skill/Skill'
-import { Contact } from '../contacts/Contacts'
 import { Container } from '../../../components/Container'
 
 export const Skills = () => {

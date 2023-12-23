@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import photoJpg from '../../../assets/images/photo.jpg'
-import photoWebp from '../../../assets/images/photo.webp'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { Container } from '../../../components/Container'
 import { theme } from '../../../styles/Theme'
@@ -46,7 +45,7 @@ const PhotoWrapper = styled.div`
     left: 24px;
     z-index: -1;
 
-    @media ${theme.media.mobile} {
+    @media ${theme.media.tablet} {
       width: 314px;
       height: 414px;
       margin-top: 65px;
@@ -62,7 +61,7 @@ const Photo = styled.img`
   object-fit: cover;
   margin-right: 20px;
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     width: 310px;
     height: 380px;
     margin-top: 65px;
@@ -107,4 +106,9 @@ const Name = styled.h2`
 const SmallText = styled.span`
   font-size: 14px;
   font-weight: 400;
+
+  @media ${theme.media.mobile} {
+    display: inline-block;
+    margin-top: 26px;
+  }
 `

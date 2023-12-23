@@ -32,4 +32,8 @@ export const Button = styled.button`
       height: 100%;
     }
   }
+
+  @media ${theme.media.mobile} {
+    margin-top: -12px;
+  }
 `

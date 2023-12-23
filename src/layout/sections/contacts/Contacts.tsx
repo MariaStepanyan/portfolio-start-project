@@ -35,6 +35,10 @@ const StyledForm = styled.form`
     resize: none;
     height: 150px;
   }
+
+  @media ${theme.media.mobile} {
+    margin: -13px auto;
+  }
 `
 
 const Field = styled.input`
@@ -57,4 +61,6 @@ const Field = styled.input`
   &:focus-visible {
     outline: 1px solid ${theme.colors.borderColor};
   }
+
+
 `
