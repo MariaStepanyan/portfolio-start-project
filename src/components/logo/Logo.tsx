@@ -1,7 +1,7 @@
 import Img from '../../assets/images/favicon.svg'
 // import { Icon } from '../icon/Icon'
 
-export const Logo = () => {
+export const Logo: React.FC = () => {
   return (
     <a href="">
       {/* <Icon iconId='myLogo' /> */}
