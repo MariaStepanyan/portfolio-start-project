@@ -111,7 +111,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
     ${(props) =>
       props.isOpen &&
-      css<{ isOpen: boolean }>`rt yarn
+      css<{ isOpen: boolean }>`
         background-color: rgba(255, 255, 255, 0);
       `}
 
