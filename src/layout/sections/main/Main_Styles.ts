@@ -72,6 +72,10 @@ const Name = styled.h2`
       bottom: 0;
       z-index: -1;
     }
+
+    @media (max-width: 429px) {
+      white-space: normal;
+    }
   }
 
   @media ${theme.media.mobile} {

@@ -7,7 +7,7 @@ import timerImgPng from '../../../assets/images/proj2.png'
 import { Container } from '../../../components/Container'
 import { S } from './Works_Styles'
 
-const worksItems = ['All', 'landing page', 'React', 'spa']
+const tabsItems = ['All', 'landing page', 'React', 'spa']
 
 const workdata = [
   {
@@ -27,7 +27,7 @@ export const Works: React.FC = () => {
     <S.Works>
       <Container>
         <SectionTitle>My Works</SectionTitle>
-        <TabMenu menuItem={worksItems} />
+        <TabMenu tabsItems={tabsItems} />
         <FlexWrapper justify="space-between" align="flex-start" wrap="wrap">
           {workdata.map((w, item) => {
             return <Work src={w.src} key={item} title={w.title} text={w.text} />
