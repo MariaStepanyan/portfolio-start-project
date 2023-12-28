@@ -7,6 +7,7 @@ import timerImgPng from '../../../assets/images/proj2.png'
 import { Container } from '../../../components/Container'
 import { S } from './Works_Styles'
 import { useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const tabsItems: Array<{ status: TabsStatusType; title: string }> = [
   {
@@ -33,12 +34,14 @@ const worksData = [
     title: 'Social Network',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     type: 'spa',
+    id: 1,
   },
   {
     src: timerImgPng,
     title: 'Timer',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     type: 'react',
+    id: 2,
   },
 ]
 
@@ -61,7 +64,7 @@ export const Works: React.FC = () => {
   }
 
   return (
-    <S.Works id='works'>
+    <S.Works id="works">
       <Container>
         <SectionTitle>My Works</SectionTitle>
         <TabMenu
@@ -70,9 +73,22 @@ export const Works: React.FC = () => {
           currentFilterStatus={currentFilterStatus}
         />
         <FlexWrapper justify="space-between" align="flex-start" wrap="wrap">
-          {filteredWorks.map((w, item) => {
-            return <Work src={w.src} key={item} title={w.title} text={w.text} />
-          })}
+          <AnimatePresence>
+            {filteredWorks.map((w) => {
+              return (
+                <motion.div style = {{width: '400px',
+                  flexGrow: 1, maxWidth: '540px'}}
+                  layout={true}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  key={w.id}
+                >
+                  <Work src={w.src} key={w.id} title={w.title} text={w.text} />
+                </motion.div>
+              )
+            })}
+          </AnimatePresence>
         </FlexWrapper>
       </Container>
     </S.Works>
