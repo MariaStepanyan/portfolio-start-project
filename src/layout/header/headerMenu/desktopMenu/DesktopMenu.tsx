@@ -1,12 +1,10 @@
 import { Menu } from '../menu/Menu'
 import { S } from './../headerMenu_Styles'
 
-export const DesktopMenu: React.FC<{ menuItem: Array<string> }> = (props: {
-  menuItem: Array<string>
-}) => {
+export const DesktopMenu: React.FC = () => {
   return (
     <S.DesktopMenu>
-      <Menu menuItem={props.menuItem} />
+      <Menu />
     </S.DesktopMenu>
   )
 }
