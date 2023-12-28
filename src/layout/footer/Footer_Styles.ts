@@ -31,6 +31,7 @@ const SocialLink = styled.a`
   background-color: rgba(226, 218, 0, 0.301);
   width: 35px;
   height: 35px;
+  transition: ${theme.animations.transition};
 
   display: flex;
   justify-content: center;

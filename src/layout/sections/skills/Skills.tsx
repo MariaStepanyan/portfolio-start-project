@@ -3,6 +3,7 @@ import { FlexWrapper } from '../../../components/FlexWrapper'
 import { Skill } from './skill/Skill'
 import { Container } from '../../../components/Container'
 import { S } from './Skills_Styles'
+import { Fade } from 'react-awesome-reveal'
 
 const skillData = [
   {
@@ -39,17 +40,24 @@ const skillData = [
 
 export const Skills = () => {
   return (
-    <S.Skills id='skills'>
+    <S.Skills id="skills">
       <SectionTitle>My Skills</SectionTitle>
       <Container>
         <FlexWrapper wrap="wrap" justify={'space-between'}>
-          {skillData.map((s, index) => {
-            return <Skill iconId={s.iconId} key={index} title={s.title} text={s.text} />
-          })}
+          <Fade cascade={true} damping = {0.2}>
+            {skillData.map((s, index) => {
+              return (
+                <Skill
+                  iconId={s.iconId}
+                  key={index}
+                  title={s.title}
+                  text={s.text}
+                />
+              )
+            })}
+          </Fade>
         </FlexWrapper>
       </Container>
     </S.Skills>
   )
 }
-
-
